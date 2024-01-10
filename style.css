@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.file-action-container {
+  background-color: rgb(110, 121, 110);
+  height: 3rem;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 1rem;
+}
+.file-action {
+  color: white;
+  margin: 0.5rem;
+}
+.cell-action-container {
+  background-color: rgb(215, 215, 215);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.cell-action-container > span {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.cell-action-container > select {
+  outline: none;
+  border: none;
+  margin-left: 0.5rem;
+  padding: 0.2rem;
+}
+.formula-action-container {
+  background-color: rgb(176, 191, 191);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.formula-action-container > span {
+  display: inline-block;
+  background-color: red;
+}
+.formula-action-container > * {
+  display: inline-block;
+  margin-left: 0.8rem;
+}
+
+.formula-action-container > input {
+  outline: none;
+  border: none;
+  height: 60%;
+  border-radius: 2px;
+}
+
+.formula-icons {
+  width: 1.2rem;
+}
+.address-bar {
+  width: 5rem;
+  text-align: center;
+}
+.formula-bar {
+  width: calc(100vw - 9rem);
+}
+
+.grid-container {
+  background-color: beige;
+  height: calc(100vh - 12rem);
+  overflow: auto;
+  position: relative;
+}
+.sheet-container {
+  background-color: rgb(170, 170, 167);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.sheet-container > .sheet {
+  margin-left: 1rem;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.dummy-container {
+  width: 2rem;
+  height: 2rem;
+  background-color: lightseagreen;
+  position: fixed;
+  z-index: 2;
+}
+.col-container {
+  position: sticky;
+  top: 2rem;
+  left: 0;
+}
+.address-col {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid;
+  position: sticky;
+  top: 2rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-row-cont {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 2rem;
+}
+.address-row {
+  border: 1px solid;
+  width: 5rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cell-container {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
+
+.row-cont {
+  display: flex;
+}
+.cell {
+  border: 1px solid;
+  width: 5rem;
+  height: 2rem;
+  outline: none;
+}
+.color-props{
+    position: relative;
+    margin-left: 0.7rem;
+}
+.color-props > input {
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+}

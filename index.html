@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>excell</title>
+  </head>
+  <body>
+    <div class="file-action-container">
+      <div class="file-action">Home</div>
+      <div class="file-action">File</div>
+      <div class="file-action">Insert</div>
+      <div class="file-action">Layout</div>
+      <div class="file-action">Help</div>
+    </div>
+    <div class="cell-action-container">
+      <span class="material-icons"> content_copy </span>
+      <span class="material-icons"> content_cut </span>
+      <span class="material-icons"> content_paste </span>
+      <select class="fontFamily">
+        <option value="">Select Font style</option>
+        <option value="Sans-serif">Sans-serif</option>
+        <option value="Monospace">Monospace</option>
+        <option value="Cursive">Cursive</option>
+        <option value="Fantasy">Fantasy</option>
+      </select>
+      <select class="fontSize">
+        <option value="">Select Font Size</option>
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="24">24</option>
+        <option value="24">28</option>
+        <option value="24">36</option>
+      </select>
+      <span class="material-icons bold"> format_bold </span>
+      <span class="material-icons italic"> format_italic </span>
+      <span class="material-icons underline"> format_underlined </span>
+      <span class="material-icons alignLeft"> format_align_left </span>
+      <span class="material-icons alignCenter"> format_align_center </span>
+      <span class="material-icons alignRight"> format_align_right </span>
+      <div class="color-props">
+        <span class="material-icons"> format_color_text </span>
+        <input type="color" class="textColor" />
+      </div>
+      <div class="color-props">
+        <span class="material-icons"> format_color_fill </span>
+        <input type="color" class="bgColor" />
+      </div>
+    </div>
+    <div class="formula-action-container">
+      <input class="address-bar" type="text" readonly />
+      <img class="formula-icons" src="./asset/formula.png" />
+      <input class="formula-bar" type="text" />
+    </div>
+    <div class="grid-container">
+      <div class="dummy-container"></div>
+      <div class="col-container"></div>
+      <div class="cell-container">
+        <div class="address-row-cont"></div>
+      </div>
+    </div>
+    <div class="sheet-container">
+      <span class="material-icons"> post_add </span>
+      <div class="sheet">Sheet1</div>
+    </div>
+  </body>
+  <script src="./grid.js"></script>
+  <script src="./cell.js"></script>
+</html>
